@@ -54,6 +54,15 @@ sys	0m1,027s
 #********************************************************************************
 ```
 
+## Compilation & Run
+
+```
+make
+./hbv
+```
+
+
+
 [^1]: https://en.wikipedia.org/wiki/HBV_hydrology_model
 [^2]: Mutuwatte, L., 2005. Calibration of a semi distributed hydrological model using discharge and remote sensing data. PhD Thesis, ITC, The Netherlands.
 [^3]: https://github.com/YannChemin/HBV/blob/main/Calibration_of_a_semi_distributed_hydrol.pdf
