@@ -9,7 +9,7 @@ This is a translation of the HBV hydrology model in parallelized C language, the
 
 ## Run times
 
-**i7 - 8 cores = 8 threads - HP Omen (20220730, Ubuntu)**
+**i7 4.9GHz - 8 cores = 8 threads - HP Omen (20220730, Ubuntu)**
 
 ```
 real 0m39.214s
@@ -17,7 +17,7 @@ user 5m2.379s
 sys 0m0.228s
 ```
 
-**i5 - 4 cores = 8 threads - MacBookPro 2014 (20220730, Ubuntu)**
+**i5 2.5GHz - 4 cores = 8 threads - MacBookPro 2014 (20220730, Ubuntu)**
 
 ```
 real	1m40,002s
