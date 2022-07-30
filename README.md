@@ -57,18 +57,23 @@ sys	0m1,027s
 ## Compilation & Run
 
 ```
-make
-> gcc -o hbv main.c arrays.c hbv_model.c hbv_report.c hbv_performance.c readcsv.c -lm -fopenmp -Wall
-./hbv
+> make
+.. gcc -o hbv main.c arrays.c hbv_model.c hbv_report.c hbv_performance.c readcsv.c -lm -fopenmp -Wall
+> ./hbv
 ```
 ## Run with Docker on Any Platform
 
-#Build Docker image with deps
+**Build Docker image with deps**
+
+```
 > docker build -t hbv:latest . 
+```
 
-#Run simulation in container.
+**Run simulation in container**
+
+```
 > docker run hbv:latest
-
+```
 
 [^1]: https://en.wikipedia.org/wiki/HBV_hydrology_model
 [^2]: Mutuwatte, L., 2005. Calibration of a semi distributed hydrological model using discharge and remote sensing data. PhD Thesis, ITC, The Netherlands.
