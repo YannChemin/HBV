@@ -61,7 +61,13 @@ make
 > gcc -o hbv main.c arrays.c hbv_model.c hbv_report.c hbv_performance.c readcsv.c -lm -fopenmp -Wall
 ./hbv
 ```
+## Run with Docker on Any Platform
 
+#Build Docker image with deps
+> docker build -t hbv:latest . 
+
+#Run simulation in container.
+> docker run hbv:latest
 
 
 [^1]: https://en.wikipedia.org/wiki/HBV_hydrology_model
