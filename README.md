@@ -1,5 +1,5 @@
 # HBV
-HBV hydrological model, in parallelized C language (very fast !)
+HBV hydrological model, in parallelized C language with OpenMP (very very FAST !)
 
 ```
 #********************************************************************************
