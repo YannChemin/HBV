@@ -1,5 +1,5 @@
 # HBV
-HBV hydrological model, in parallelized C language with OpenMP (very very FAST !)
+HBV hydrological model[^1], in parallelized C language with OpenMP (very very FAST !)
 
 ```
 #********************************************************************************
@@ -27,3 +27,5 @@ HBV hydrological model, in parallelized C language with OpenMP (very very FAST !
 #*	file 10)								*
 #********************************************************************************
 ```
+
+[^1]: https://en.wikipedia.org/wiki/HBV_hydrology_model
