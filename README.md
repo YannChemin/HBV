@@ -3,7 +3,7 @@ HBV hydrological model[^1], in parallelized C language with OpenMP (very very FA
 
 # Description
 
-The HBV hydrological model[^1], or Hydrologiska Byråns Vattenbalansavdelning model, is a computer simulation used to analyze river discharge and water pollution. Developed originally for use in Scandinavia, this #hydrological transport model has also been applied in a large number of catchments on most continents.
+The HBV hydrological model[^1], or Hydrologiska Byråns Vattenbalansavdelning model, is a computer simulation used to analyze river discharge and water pollution. Developed originally for use in Scandinavia, this hydrological transport model has also been applied in a large number of catchments on most continents.
 
 This is a translation of the HBV hydrology model in parallelized C language, the speedup is enormous as it uses all of the computer cores ! From hours to seconds...
 
