@@ -7,12 +7,22 @@ The HBV hydrological model[^1], or Hydrologiska Byråns Vattenbalansavdelning mo
 
 This is a translation of the HBV hydrology model in parallelized C language, the speedup is enormous as it uses all of the computer cores ! From hours to seconds...
 
-## Run time on 8 cores in a HP Omen (20220730)
+## Run times
+
+### i7 - 8 cores = 8 threads - HP Omen (20220730, Ubuntu)
 
 ```
 real 0m39.214s
 user 5m2.379s
 sys 0m0.228s
+```
+
+### i5 - 4 cores = 8 threads - MacBookPro 2014 (20220730, Ubuntu)
+
+```
+real	1m40,002s
+user	9m53,303s
+sys	0m1,027s
 ```
 
 ## Example dataset is Karkeh Basin (Iran)[^2][^3] 
