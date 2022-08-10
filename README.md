@@ -25,6 +25,14 @@ user	9m53,303s
 sys	0m1,027s
 ```
 
+**Quad-Core Allwinner A64 1.152 GHz - 4 cores = 4 threads - PinePhone BraveHeart 2020 (20220810, Mobian)**
+
+```
+real	14m39,652s
+user	51m7,336s
+sys	0m8,209s
+```
+
 ## Example dataset is Karkeh Basin (Iran)[^2][^3] 
 
 ```
