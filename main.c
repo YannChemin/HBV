@@ -293,7 +293,14 @@ int main(int argc, char *argv[]){
 		//END RANDOMIZATION AND BOOT-STRAPPING OF SELECTED INPUT DATA
 		
 		//SIMULATION LOOP
+		/* CPU distribution */
 		#pragma omp parallel for default(shared) private(t,b)
+		/* GPU distribution */
+		/* Requires: sudo apt install gcc-offload-[nvptx;amdgcn]
+		 * 	gcc-offload-amdgcn - GCC offloading compiler to AMD GCN
+		 *	gcc-offload-nvptx - GCC offloading compiler to NVPTX
+		*/
+		/*#pragma omp target teams distribute parallel for default(shared) private(t,b)*/
 		for (t=0;t<ttot;t++){
 			//BASIN LOOP
 			for (b=0;b<btot;b++){
