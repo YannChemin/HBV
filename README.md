@@ -1,6 +1,40 @@
 # HBV
 HBV hydrological model[^1], in parallelized C language with OpenMP (very very FAST !)
 
+## Description
+
+The HBV hydrological model[^1], or Hydrologiska Byråns Vattenbalansavdelning model, is a computer simulation used to analyze river discharge and water pollution. Developed originally for use in Scandinavia, this hydrological transport model has also been applied in a large number of catchments on most continents.
+
+This is a translation of the HBV hydrology model in parallelized C language, the speedup is enormous as it uses all of the computer cores ! From hours to seconds...
+
+## Run times
+
+**i7 4.9GHz - 8 cores = 8 threads - HP Omen (20220730, Ubuntu)**
+
+```
+real 0m39.214s
+user 5m2.379s
+sys 0m0.228s
+```
+
+**i5 2.5GHz - 4 cores = 8 threads - MacBookPro 2014 (20220730, Ubuntu)**
+
+```
+real	1m40,002s
+user	9m53,303s
+sys	0m1,027s
+```
+
+**Quad-Core Allwinner A64 1.152 GHz - 4 cores = 4 threads - PinePhone BraveHeart 2020 (20220810, Mobian)**
+
+```
+real	14m39,652s
+user	51m7,336s
+sys	0m8,209s
+```
+
+## Example dataset is Karkeh Basin (Iran)[^2][^3] 
+
 ```
 #********************************************************************************
 #*     HBV-7 Karkheh								*
@@ -28,4 +62,27 @@ HBV hydrological model[^1], in parallelized C language with OpenMP (very very FA
 #********************************************************************************
 ```
 
+## Compilation & Run
+
+```
+> make
+.. gcc -o hbv main.c arrays.c hbv_model.c hbv_report.c hbv_performance.c readcsv.c -lm -fopenmp -Wall
+> ./hbv
+```
+## Run with Docker on Any Platform
+
+**Build Docker image with deps**
+
+```
+> docker build -t hbv:latest . 
+```
+
+**Run simulation in container**
+
+```
+> docker run hbv:latest
+```
+
 [^1]: https://en.wikipedia.org/wiki/HBV_hydrology_model
+[^2]: Mutuwatte, L., 2005. Calibration of a semi distributed hydrological model using discharge and remote sensing data. PhD Thesis, ITC, The Netherlands.
+[^3]: https://github.com/YannChemin/HBV/blob/main/Calibration_of_a_semi_distributed_hydrol.pdf
